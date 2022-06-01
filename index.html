@@ -3,7 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>听松阁桌面</title>
+<link type="text/css" rel="stylesheet" href="images/main.css">
 
+<!--播放器样式-->
+<link href="css/player.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="images/ie6.css" />
+<![endif]-->
+<script src="images/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="images/lightbox.min.js"></script>
+<style type="text/css">
+.wrapper{ margin:0px auto; padding:20px; border:1px solid #CCC; background:#333; width:980px; font-size:12px;}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="img/an.ico"/>
 		<style type="text/css">
 			/*样式初始化*/
 			* {
@@ -15,7 +28,7 @@
 			body {
 				overflow-x: hidden;
 				overflow-y: hidden;
-				background-color: fff;
+				background-color: 000;
 				font-size:13px;
 				color: #ffffff;
 			}
@@ -80,23 +93,14 @@ background-color: 000;
 			#li15:target{
 				display: block;
 			}
-		
+			
+			
 		
 		</style>
-
-<link rel="stylesheet" href="css/mplayer.css">
-<style>
-	.info {
-		font-family: "Microsoft Yahei";
-		text-align: center;
-	}
-	.info h1 {
-		font-weight: 400;
-	}
-</style>
+<script data-ad-client="ca-pub-8742386847853865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <noscript></head></noscript>
 
-	<body bgcolor="#ffffff" Scroll=no>
+	<body bgcolor="#000000" Scroll=no>
 		<div class="box">
 			<ul class="content">
 				<li id="li1"></li>
@@ -321,7 +325,7 @@ background-color: 000;
 		<td width="20">&nbsp;</td>
 		<td><a href="http://cloud.2345.ltd/" target="_blank"><img src="https://code.aliyun.com/free163/publiclib/raw/0bb5e4aec8d0bdd1a4ebcda03491b9b8a3115e28/desktop_computer/space.gif" width="40" height="50" border="0" alt=""></a></td>
 		<td width="1050">&nbsp;</td>
-		<td><a href="http://wx.qq.com" target="_blank"><img src="https://code.aliyun.com/free163/publiclib/raw/0bb5e4aec8d0bdd1a4ebcda03491b9b8a3115e28/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
+		<td><a href="http://wx.qq.com/?lightbox[iframe]=true&lightbox[width]=800&lightbox[height]=540" target="_blank"><img src="https://code.aliyun.com/free163/publiclib/raw/0bb5e4aec8d0bdd1a4ebcda03491b9b8a3115e28/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
 		<td width="10">&nbsp;</td>
 		<td><a href="http://www.360.cn/" target="_blank"><img src="https://code.aliyun.com/free163/publiclib/raw/0bb5e4aec8d0bdd1a4ebcda03491b9b8a3115e28/desktop_computer/space.gif" width="15" height="50" border="0" alt=""></a></td>
 		<td width="7">&nbsp;</td>
@@ -362,120 +366,108 @@ background-color: 000;
 <!-- 代码 结束 -->
 
 
-<!-- 播放器代码 开始 -->
-<div class="mp" style="z-index:99;">
-	<div class="mp-box">
-		<img src="img/mplayer_error.png" alt="music cover" class="mp-cover">
-		<div class="mp-info">
-			<p class="mp-name">燕归巢</p>
-			<p class="mp-singer">许嵩</p>
-			<p><span class="mp-time-current">00:00</span>/<span class="mp-time-all">00:00</span></p>
+
+<div id="jp_container_N" class="jp-video jp-video-270p jp-state-playing" role="application" aria-label="media player" style="left: 0px; height: 175px; bottom: 20px; z-index:99;">
+	<div class="jp-type-playlist">
+		<div id="jquery_jplayer_N" class="jp-jplayer" style="width: 90px; height: 90px;">
+
+			<audio id="jp_audio_0" preload="metadata" src="http://music.163.com/song/media/outer/url?id=31473269.mp3" title="那英"></audio>
+			<video id="jp_video_0" preload="metadata" title="那英" style="width: 0px; height: 0px;"></video>
 		</div>
-		<div class="mp-btn">
-			<button class="mp-prev" title="上一首"></button>
-			<button class="mp-pause" title="播放"></button>
-			<button class="mp-next" title="下一首"></button>
-			<button class="mp-mode" title="播放模式"></button>
-			<div class="mp-vol">
-				<button class="mp-vol-img" title="静音"></button>
-				<div class="mp-vol-range" data-range_min="0" data-range_max="100" data-cur_min="80">
-					<div class="mp-vol-current"></div>
-					<div class="mp-vol-circle"></div>
+		<div class="jp-gui">
+			<div class="jp-video-play" style="display: none;">
+				<button class="jp-video-play-icon" role="button" tabindex="0">播放</button>
+			</div>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar" style="width: 100%;">
+						<div class="jp-play-bar" style="overflow: hidden; width: 97.5219%;"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">04:11</div>
+				<div class="jp-duration" role="timer" aria-label="duration">04:17</div>
+				<div class="jp-controls-holder">
+					<div class="jp-controls">
+						<button class="jp-previous" role="button" tabindex="0">上一曲</button>
+						<button class="jp-play" role="button" tabindex="0">播放</button>
+						<button class="jp-next" role="button" tabindex="0">下一曲</button>
+						<button class="jp-stop" role="button" tabindex="0">暂停</button>
+					</div>
+					<div class="jp-volume-controls">
+						<button class="jp-mute" role="button" tabindex="0">静音</button>
+						<button class="jp-volume-max" role="button" tabindex="0">最大音量</button>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value" style="width: 10%;"></div>
+						</div>
+					</div>
+					<div class="jp-toggles">
+						<button class="jp-repeat" role="button" tabindex="0">重复</button>
+						<button class="jp-shuffle" role="button" tabindex="0">随机</button>
+						<!--<button class="jp-full-screen" role="button" tabindex="0">全屏</button>-->
+					</div>
+				</div>
+				<div class="jp-details" style="display: none;">
+					<div class="jp-title" aria-label="title">那英</div>
 				</div>
 			</div>
 		</div>
-		<div class="mp-pro">
-			<div class="mp-pro-current"></div>
+		<div class="jp-playlist">
+			<div class="jp-playlist-box" style="height: 80px;">
+				<ul style="height: 1000px; display: block; top: 0px;">
+					<li>
+						<div>
+							<a href="javascript:;" class="jp-playlist-item-remove">×</a>
+							<a href="javascript:;" class="jp-playlist-item" tabindex="0">默 <span class="jp-artist" style="transform: rotate(180deg);"> - 那英</span></a>
+						</div>
+					</li>
+					<li class="">
+						<div>
+							<a href="javascript:;" class="jp-playlist-item-remove">×</a>
+							<a href="javascript:;" class="jp-playlist-item" tabindex="0">Ellens Gesang III D839 <span class="jp-artist" style="transform: rotate(180deg);"> - Geoffrey Parsons</span></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="javascript:;" class="jp-playlist-item-remove">×</a>
+							<a href="javascript:;" class="jp-playlist-item" tabindex="0">Fire <span class="jp-artist" style="transform: rotate(180deg);"> - Said The Sky</span></a>
+						</div>
+					</li>
+					<li class="jp-playlist-current" style="display: list-item;">
+						<div>
+							<a href="javascript:;" class="jp-playlist-item-remove">×</a>
+							<a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="0">兰若词 <span class="jp-artist" style="transform: rotate(180deg);"> - 刘亦菲</span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="mp-menu">
-			<button class="mp-list-toggle"></button>
-			<button class="mp-lrc-toggle"></button>
+		<div class="jp-no-solution" style="display: none;">
+			<span style="transform: rotate(180deg);">升级需要</span> 您浏览器赞不支持播放，请更新版本
+			<a href="http://get.adobe.com/flashplayer" target="_blank">Flash插件</a>.
 		</div>
 	</div>
-	<button class="mp-toggle">
-		<span class="mp-toggle-img"></span>
-	</button>
-	<div class="mp-lrc-box">
-		<ul class="mp-lrc"></ul>
+	<!--歌曲列表滚动条-->
+	<div class="scrollBar" style="display: block;">
+		<div class="bar" style="top: 0px;"></div>
 	</div>
-	<button class="mp-lrc-close"></button>
-	<div class="mp-list-box">
-		<ul class="mp-list-title"></ul>
-		<table class="mp-list-table">
-			<thead>
-				<tr>
-					<th>歌名</th>
-					<th>歌手</th>
-					<th>时长</th>
-				</tr>
-			</thead>
-			<tbody class="mp-list"></tbody>
-		</table>
-	</div>
+	<!--播放器展开隐藏按钮-->
+	<button type="button" class="folded_bt" title="点击收缩" id="btnfold" style="top: 52px;">
+  <span style="transform: rotate(180deg);"></span>
+</button>
+	<div id="listRemove" style="display: block;"></div>
+	<!--移除全部歌曲按钮-->
+	<div id="listClose"></div>
+	<!--歌曲列表展开收缩按钮-->
 </div>
+<!-- 左侧播放器 结束-->
 
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/mplayer.js"></script>
-<script src="js/mplayer-list.js"></script>
-<script src="js/mplayer-functions.js"></script>
-<script src="js/jquery.nstSlider.min.js"></script>
-<script>
-var modeText = ['顺序播放','单曲循环','随机播放','列表循环'];
-var player = new MPlayer({
-	// 容器选择器名称
-	containerSelector: '.mp',
-	// 播放列表
-	songList: mplayer_song,
-	// 专辑图片错误时显示的图片
-	defaultImg: 'img/mplayer_error.png',
-	// 自动播放
-	autoPlay: true,
-	// 播放模式(0->顺序播放,1->单曲循环,2->随机播放,3->列表循环(默认))
-	playMode:0,
-	playList:0,
-	playSong:0,
-	// 当前歌词距离顶部的距离
-	lrcTopPos: 34,
-	// 列表模板，用${变量名}$插入模板变量
-	listFormat: '<tr><td>${name}$</td><td>${singer}$</td><td>${time}$</td></tr>',
-	// 音量滑块改变事件名称
-	volSlideEventName:'change',
-	// 初始音量
-	defaultVolume:80
-}, function () {
-	// 绑定事件
-	this.on('afterInit', function () {
-		console.log('播放器初始化完成，正在准备播放');
-	}).on('beforePlay', function () {
-		var $this = this;
-		var song = $this.getCurrentSong(true);
-		var songName = song.name + ' - ' + song.singer;
-		console.log('即将播放'+songName+'，return false;可以取消播放');
-	}).on('timeUpdate', function () {
-		var $this = this;
-		console.log('当前歌词：' + $this.getLrc());
-	}).on('end', function () {
-		var $this = this;
-		var song = $this.getCurrentSong(true);
-		var songName = song.name + ' - ' + song.singer;
-		console.log(songName+'播放完毕，return false;可以取消播放下一曲');
-	}).on('mute', function () {
-		var status = this.getIsMuted() ? '已静音' : '未静音';
-		console.log('当前静音状态：' + status);
-	}).on('changeMode', function () {
-		var $this = this;
-		var mode = modeText[$this.getPlayMode()];
-		$this.dom.container.find('.mp-mode').attr('title',mode);
-		console.log('播放模式已切换为：' + mode);
-	});
-});
+<script type="text/javascript" src="js/jquery.min.js"></script>
 
-$(document.body).append(player.audio); // 测试用
-
-setEffects(player);
-
-</script>
-<!-- 播放器代码 结束 -->
+<!--播放器js-->
+<script src="js/player.js"></script>
+<script src="js/playlist.js"></script>
+<script src="js/player_database.js"></script>
+<!--播放器js-->
 
 
 	</body>
